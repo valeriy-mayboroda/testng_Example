@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNgSuite" verbose="1">
+
+    <parameter name="url" value="http://prestashop-automation.qatestlab.com.ua/admin147ajyvk0/"/>
+    <parameter name="shopUrl" value="http://prestashop-automation.qatestlab.com.ua/en/"/>
+
+    <test name="Test with Chrome browser">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.qatestlab.pages.ShopProductPage"/>
+        </classes>
+    </test>
+
+    <test name="Test with Firefox browser">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="com.qatestlab.pages.ShopProductPage"/>
+        </classes>
+    </test>
+
+    <test name="Test with IE browser">
+        <parameter name="browser" value="ie"/>
+        <classes>
+            <class name="com.qatestlab.pages.ShopProductPage"/>
+        </classes>
+    </test>
+
+</suite>
